@@ -1,5 +1,6 @@
 ## 项目说明
 ### HOST: http://mtopen.umember.cn
+### 开发者后台地址: http://b.umember.cn/render/secret-store-webapp/console
 
 ## 1:获取auth token 接口
 
