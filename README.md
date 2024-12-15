@@ -165,7 +165,7 @@
     "code": 10000,
     "msg": "success",
     "data": {
-        "verify_message": "",
+        "verify_message": "验证成功",
         "verify_success": true
     },
     "count": 1,
