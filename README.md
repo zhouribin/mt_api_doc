@@ -1,7 +1,7 @@
 ## 项目说明
 ### HOST: http://mtopen.umember.cn
 
-## 获取auth token 接口
+## 1:获取auth token 接口
 
 - 请求方式: POST
 - 请求地址: /admin/login
@@ -43,7 +43,7 @@
 ```
 
 
-## 获取在售列表接口
+## 2:获取在售列表接口
 
 - 请求方式: GET
 - 请求地址: /admin/user/meituan/coupon/list
@@ -77,7 +77,7 @@
       "actual_amount": "78.0",
       "origin_amount": "78.0",
       "product_name": "【开业特惠】通用通宵8小时",
-      "sku_id": 1214177784,
+      "sku_id": 1214171123,
       "sku_name": "【开业特惠】通用通宵8小时"
     }
   ],
