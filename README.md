@@ -1,7 +1,11 @@
 ## 项目说明
 ### HOST: http://mtopen.umember.cn
 ### 开发者后台地址: http://b.umember.cn/render/secret-store-webapp/console
-### 注意所有接口: ContentType: application/json 
+### ⚠️注意所有接口: ContentType: application/json 
+### ⚠️注意所有返回 code 10000 为成功 其他为失败
+### ⚠️注意 Authorization: token 前面不要带 Bearer
+
+
 ## 1:获取auth token 接口
 
 - 请求方式: POST
