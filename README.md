@@ -48,6 +48,7 @@
 - 请求方式: GET
 - 请求地址: /admin/user/meituan/coupon/list
 - 请求头: Authorization: token
+- ⚠️注意 Authorization: token 前面不要带 Bearer
 - 请求参数:
 
   | 参数名      | 参数说明 | 备注 |
@@ -85,3 +86,45 @@
   "date_time": "2024-12-15 23:00:45"
 }
 ```
+
+## 3:获取订单信息接口
+
+- 请求方式: GET
+- 请求地址: /admin/user/meituan/coupon/detail
+- 请求头: Authorization: token
+- ⚠️注意 Authorization: token 前面不要带 Bearer
+- 请求参数:
+
+  | 参数名         | 参数说明 | 备注 |
+  |-------------|------|----|
+  | store_id    | 店铺id | 必填 |
+  | coupon_code | 券码   | 必填 |
+
+- 请求示例:
+- /admin/user/meituan/coupon/detail?store_id=1&coupon_code=123456
+
+- 响应参数:
+
+    | 参数名       | 参数说明 | 备注 |
+    |-----------|------|----|
+    | order_id  | 订单id |    |
+    | sku_id    | 商品id |    |
+    |  sku_name | 商品名称 |    |
+
+- 响应示例:
+```json
+
+{
+    "code": 10000,
+    "msg": "success",
+    "data": {
+        "order_id": "4971997871483397117",
+        "sku_id": 1206944074,
+        "sku_name": "开业特惠通用畅玩4小时[49.00元][1206944074]"
+    },
+    "count": 1,
+    "date_time": "2024-12-16 00:06:04"
+}
+
+```
+  
