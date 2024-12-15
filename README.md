@@ -5,7 +5,7 @@
 ## 1:获取auth token 接口
 
 - 请求方式: POST
-- 请求地址: /admin/login
+- 请求地址: /open/login
 
 - 请求参数:
 
@@ -47,7 +47,7 @@
 ## 2:获取在售列表接口
 
 - 请求方式: GET
-- 请求地址: /admin/user/meituan/coupon/list
+- 请求地址: /open/user/meituan/coupon/list
 - 请求头: Authorization: token
 - ⚠️注意 Authorization: token 前面不要带 Bearer
 - 请求参数:
@@ -57,7 +57,7 @@
   | store_id | 店铺id | 必填 |
 
 - 请求示例:
-- /admin/user/meituan/coupon/list?store_id=1
+- /open/user/meituan/coupon/list?store_id=1
 
 - 响应参数:
 
@@ -91,7 +91,7 @@
 ## 3:获取订单信息接口
 
 - 请求方式: GET
-- 请求地址: /admin/user/meituan/coupon/detail
+- 请求地址: /open/user/meituan/coupon/detail
 - 请求头: Authorization: token
 - ⚠️注意 Authorization: token 前面不要带 Bearer
 - 请求参数:
@@ -102,7 +102,7 @@
   | coupon_code | 券码   | 必填 |
 
 - 请求示例:
-- /admin/user/meituan/coupon/detail?store_id=1&coupon_code=123456
+- /open/user/meituan/coupon/detail?store_id=1&coupon_code=123456
 
 - 响应参数:
 
@@ -134,7 +134,7 @@
 ## 4:核销接口
 
 - 请求方式: POST
-- 请求地址: /admin/user/meituan/coupon/verify
+- 请求地址: /open/user/meituan/coupon/verify
 - 请求头: Authorization: token
 - ⚠️注意 Authorization: token 前面不要带 Bearer
 - 请求参数:
