@@ -4,6 +4,7 @@
 ### ⚠️注意所有接口: ContentType: application/json 
 ### ⚠️注意所有返回 code 10000 为成功 其他为失败
 ### ⚠️注意 Authorization: token 前面不要带 Bearer
+### ⚠️注意所有接口: 一秒并发为2次请求 请勿频繁请求 接口会拦截
 
 
 ## 1:获取auth token 接口
