@@ -48,8 +48,48 @@
 }
 ```
 
+### 2:获取店铺列表接口
 
-## 2:获取在售列表接口
+- 请求方式: GET
+- 请求地址: /open/user/meituan/store/list
+- 请求头: Authorization: token
+- ⚠️注意 Authorization: token 前面不要带 Bearer
+- 请求参数: 无
+- 返回参数:
+
+  | 参数名           | 参数说明   | 备注               |
+  |---------------|--------|------------------|
+  | address       | 地址     |                  |
+  | area_id       | 区域id   |                  |
+  | city_id       | 城市id   |                  |
+  | province_id   | 省份id   |                  |
+  | request_count | 剩余请求次数 |                  |
+  | status        | 状态     | 1-未授权2-已授权3-授权过期 |
+  | store_id      | 店铺id   |                  |
+  | store_name    | 店铺名称   |                  |
+- 返回示例:
+```json
+{
+  "code": 10000,
+  "msg": "success",
+  "data": [
+    {
+      "address": "万达金街5-1079号（万达金街蜜雪冰城旁3楼）",
+      "area_id": 330102,
+      "city_id": 330100,
+      "province_id": 330000,
+      "request_count": 9983,
+      "status": 2,
+      "store_id": 5,
+      "store_name": "大声發24小时自助棋牌室"
+    }
+  ],
+  "count": 1,
+  "date_time": "2024-12-16 13:04:20"
+}
+```
+
+## 3:获取在售列表接口
 
 - 请求方式: GET
 - 请求地址: /open/user/meituan/coupon/list
@@ -93,7 +133,7 @@
 }
 ```
 
-## 3:获取订单信息接口
+## 4:获取订单信息接口
 
 - 请求方式: GET
 - 请求地址: /open/user/meituan/coupon/detail
@@ -136,7 +176,7 @@
 
 ```
 
-## 4:核销接口
+## 5:核销接口
 
 - 请求方式: POST
 - 请求地址: /open/user/meituan/coupon/verify
